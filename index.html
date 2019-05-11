@@ -9,8 +9,17 @@
 		<br/>
 	<table border="1" align="center">
 	<tr>
-	<td>
+	<td id="question1" style="visibility: visible;">
 		<h4 align="center">Question 1:</h4>
+		<p align="center">Who is the most handsome man in the world?</p>
+		<form id="quiz" name="quiz">
+			<input type="radio" name="author" value="1" />Tunna<br/>
+			<input type="radio" name="author" value="2" />Tùng <br/>
+			<input type="radio" name="author" value="3" />Dương Tùng Anh<br/>
+		</form>
+	</td>
+	<td id="question2" style="visibility: hidden;">
+		<h4 align="center">Question 2:</h4>
 		<p align="center">Who is the most handsome man in the world?</p>
 		<form id="quiz" name="quiz">
 			<input type="radio" name="author" value="1" />Tunna<br/>
@@ -34,7 +43,8 @@ function checkAnswer() {
     state = "Wrong answer! Please try again...";
   }
   document.getElementById("state").innerHTML = state;
-}
+  document.getElementById("question1").style.visibility = "hidden"
+  document.getElementById("question2").style.visibility = "visible"
 </script>
 	</body>
 </html>
