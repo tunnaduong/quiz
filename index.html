@@ -14,13 +14,27 @@
 		<p align="center">Who is the most handsome man in the world?</p>
 		<form>
 			<input type="radio" name="author" value="1" />Tunna<br/>
-			<input type="radio" name="author" value="2" />Tung Anh<br/>
+			<input type="radio" name="author" value="2" />Tùng <br/>
+			<input type="radio" name="author" value="3" />Dương Tùng Anh<br/>
 		</form>
 	</td>
 	</tr>
 	</table>
 	<div align="center" style="padding: 15px 25px;">
-		<input type="submit" value="CONTINUE >>">
+		<input type="submit" value="CONTINUE >>" onclick="checkAnswer()">
+		<p id="state"></p>
 	</div>
+<script>
+function checkAnswer() {
+  var answer = document.getElementsByTagName("input")[0].getAttribute("value");
+  var state;
+  if (answer = 3) {
+    state = "Correct! Let's proceed to the next level...";
+  } else {
+    state = "Wrong answer! Please try again...";
+  }
+  document.getElementById("state").innerHTML = state;
+}
+</script>
 	</body>
 </html>
