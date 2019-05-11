@@ -13,9 +13,9 @@
 		<h4 align="center">Question 1:</h4>
 		<p align="center">Who is the most handsome man in the world?</p>
 		<form>
-			<input type="radio" name="author" value="1" />Tunna<br/>
-			<input type="radio" name="author" value="2" />Tùng <br/>
-			<input type="radio" name="author" value="3" />Dương Tùng Anh<br/>
+			<input type="radio" id="author" value="1" />Tunna<br/>
+			<input type="radio" id="author" value="2" />Tùng <br/>
+			<input type="radio" id="author" value="3" />Dương Tùng Anh<br/>
 		</form>
 	</td>
 	</tr>
@@ -26,7 +26,7 @@
 	</div>
 <script>
 function checkAnswer() {
-  var answer = document.getElementsByTagName("value")[0].getAttribute("value");
+  var answer = document.getElementsById("value")[0].getAttribute("value");
   var state;
   if (answer = 3) {
     state = "Correct! Let's proceed to the next level...";
