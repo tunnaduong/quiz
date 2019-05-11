@@ -15,18 +15,18 @@
 		<h4 align="center">Question 1:</h4>
 		<p align="center">Who is the most handsome man in the world?</p>
 		<form id="quiz" name="quiz">
-			<input type="radio" name="author" value="1" />Tunna<br/>
-			<input type="radio" name="author" value="2" />Tùng <br/>
-			<input type="radio" name="author" value="3" />Dương Tùng Anh<br/>
+			<input type="radio" name="a1" value="1" />Tunna<br/>
+			<input type="radio" name="a1" value="2" />Tùng <br/>
+			<input type="radio" name="a1" value="3" />Dương Tùng Anh<br/>
 		</form>
 		</div>
 		<div id="question2" style="display:none;">
 		<h4 align="center">Question 2:</h4>
 		<p align="center">Am I handsome?</p>
 		<form id="q2" name="q2">
-			<input type="radio" name="handsome" value="1" />Definitely!<br/>
-			<input type="radio" name="handsome" value="2" />A little bit??!!<br/>
-			<input type="radio" name="handsome" value="3" />Noooooo<br/>
+			<input type="radio" name="a2" value="1" />Definitely!<br/>
+			<input type="radio" name="a2" value="2" />A little bit??!!<br/>
+			<input type="radio" name="a2" value="3" />Noooooo<br/>
 		</form>
 		</div>
 	</td>
@@ -39,7 +39,8 @@
 <script>
 function checkAnswer() {
   document.getElementById("state").style.display = "block";
-  var answer = document.quiz.author.value;
+  var answer = document.quiz.a1.value;
+  var answer2 = document.q2.a2.value;
   var state;
   if (answer == 3) {
     state = "Correct! Let's proceed to the next level...";
@@ -47,7 +48,7 @@ function checkAnswer() {
     document.getElementById("question1").style.display = "none";
     document.getElementById("question2").style.display = "block";
 	document.getElementById("state").style.display = "none";
-	answer = 
+
 }, 2000);
     
   } else {
