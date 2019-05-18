@@ -6,13 +6,13 @@ A small quiz game made mostly on HTML with no JavaScript code used.
 
 This document will guide you how to play this game, additional infomation and facts during the development process.
 
-### How to play?
+## How to play?
 
 Locate to the address: http://tunganh03.github.io/quiz to try the game. Use mouse to play, no keyboard needed.
 
 ## Authors
 
-* **Dương Tung Anh** - *Initial work* - [tunganh03](https://github.com/tunganh03)
+* **Dương Tùng Anh** - *Initial work* - [tunganh03](https://github.com/tunganh03)
 
 ## Built With
 
