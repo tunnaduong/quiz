@@ -22,4 +22,4 @@ Locate to the address: http://tunganh03.github.io/quiz to try the game. Use mous
 
 ## Notes from the developer
 
-This game is still in the development process, it may contains bugs and a limited number of questions
+This game is still in the development process, it may contains bugs and a limited number of questions.
