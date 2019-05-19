@@ -1,4 +1,4 @@
-# Quiz
+# quiz
 
 A small quiz game made mostly on HTML with no JavaScript code used.
 
